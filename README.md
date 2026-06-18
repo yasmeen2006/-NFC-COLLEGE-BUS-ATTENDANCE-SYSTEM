@@ -1,9 +1,5 @@
 # 🚌 UniRide - NFC College Bus Attendance System
 
-![University of Greater Manchester](https://img.shields.io/badge/University-Greater%20Manchester-darkred)
-![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
-![Platform](https://img.shields.io/badge/Platform-Power%20Apps-0078D4)
-
 A comprehensive **NFC-based attendance tracking system** for university campus shuttle buses, built with **Microsoft Power Apps** and **Dataverse**. The system enables seamless check-in/check-out for students using NFC cards, with real-time capacity management, automated attendance records, and detailed operational analytics.
 
 ---
@@ -159,33 +155,6 @@ Buses
 - NFC card reader device configured
 - University student records database
 
-### Installation Steps
-
-1. **Setup Dataverse Tables**
-   - Import/create Students, Attendances, Courses, Buses tables
-   - Define relationships and required fields
-   - Set up proper indexes for performance
-
-2. **Deploy Power Apps Application**
-   - Import the UniRide Power Apps solution
-   - Configure NFC reader connectivity
-   - Set Dataverse data sources
-
-3. **Configure NFC Hardware**
-   - Install NFC card reader drivers
-   - Test card reading with sample student cards
-   - Calibrate reader sensitivity
-
-4. **Initialize Master Data**
-   - Add courses to Courses table
-   - Register buses in Buses table
-   - Import student records with assigned buses and schedules
-   - Create NFC cards with student IDs
-
-5. **User Training**
-   - Train drivers on scanner interface
-   - Train admins on reporting & management
-   - Conduct pilot test with sample routes
 
 ---
 
@@ -388,20 +357,12 @@ Buses
 |--------|-------|
 | **University** | University of Greater Manchester |
 | **Project Type** | Agile/Scrum Team Project |
-| **Team Size** | Group 7 (Multiple contributors) |
+| **Team Size** | 5 contributors |
 | **Completion Status** | ✅ Completed |
 | **Deployment Ready** | ✅ Yes |
 
 ---
 
-## 🤝 Contributing
-
-This is a completed university project. For modifications:
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/your-feature`)
-3. Test thoroughly in Power Apps environment
-4. Update documentation
-5. Submit detailed pull request with changes
 
 ---
 
@@ -409,20 +370,9 @@ This is a completed university project. For modifications:
 
 - **UNIRIDE_AGILE_PROJECT_FIGMA.pdf** — UI/UX Design mockups (Figma prototypes)
 - **UNIRIDE_APP_-_EXPLANATION.pdf** — Technical deep-dive (Scanner logic, validation, reports)
-- **Group_7_Project_Documents.zip** — Project requirements, specifications, Agile artifacts
 
 ---
 
-## 📸 Screenshots & Demo
-
-_Screenshots to be added:_
-- Scanner interface with active scan
-- Valid scan feedback (green, welcome message)
-- Invalid scan feedback (red, error message)
-- Bus full warning (capacity reached)
-- Attendance records table view
-- Admin management interfaces
-- Sample reports
 
 ---
 
@@ -438,29 +388,11 @@ This project demonstrates:
 - **Hardware Integration** — NFC reader connectivity
 - **Business Analytics** — Multi-dimensional reporting
 
----
 
-## 📞 Support
 
-For issues or questions about the system:
-1. Check troubleshooting section above
-2. Review technical explanation PDF for detailed logic
-3. Examine Power Apps formulas in the solution
-4. Contact project team or university IT department
 
----
 
-## 📄 License
 
-This project was created as part of University of Greater Manchester coursework. Usage restricted to educational and institutional purposes.
-
----
-
-**Last Updated:** December 2025  
-**Status:** Production Ready ✅  
-**Version:** 1.0 (Completed)
-
----
 
 ## 🙏 Acknowledgments
 
@@ -468,4 +400,3 @@ Developed by **Group 7** as part of the Agile Software Development module at Uni
 
 ---
 
-⭐ **If you found this project helpful, please consider giving it a star!** ⭐
