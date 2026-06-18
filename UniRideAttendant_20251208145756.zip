@@ -1,0 +1,80 @@
+# UniRide Attendant Mobile App 🚍📱
+
+## Overview
+The **UniRide Attendant Mobile App** streamlines student transportation management by enabling attendants to validate bus rides, track attendance, and ensure secure, efficient workflows. Built on **Microsoft Power Platform** and integrated with **Dataverse**, the app reduces manual labor, improves accuracy, and enhances the overall user experience.
+
+---
+
+## Features ✨
+- **NFC-based attendance validation**: Quick and secure student check-ins using NFC cards.  
+- **Smart validation logic**: Error handling and real-time notifications for invalid scans.  
+- **Dynamic dashboards**: Distinct/total counts of student rides, attendance metrics, and bus utilization reports.  
+- **Role-based security**: Scalable permission sets for Drivers and Admins.  
+- **UI/UX enhancements**: Clear microcopy, Notify banners, popups, and invisible audio cues for seamless feedback.  
+
+---
+
+## Software & Programming Language 🛠️
+- Microsoft Power Apps (Canvas App)  
+- Dataverse (secure backend storage)  
+- Power Fx (formula logic and validation)  
+
+---
+
+## Installation ⚙️
+1. Go to [Power Apps Environment](https://make.powerapps.com/).  
+2. Choose the desired Environment and click on **Apps**.  
+3. In the upper menu bar, click **Import app**.  
+4. Select **From Package (zip)** and click **Upload**.  
+5. Choose `UniRideAttendant_20251208145756.zip` from File Explorer.  
+6. Click the imported app from the **Review Package Content** area.  
+7. In the Import Setup window, select **Create as New** from the Setup dropdown.  
+8. Input the desired name in the **Resource Name** field and click **Save**.  
+9. Click **Import** and wait for the package to finish importing.  
+10. Upon success, a dialogue will confirm: *"All package resources were successfully imported."*  
+11. Go to **Apps** → **My Apps**, select and open the newly imported app.  
+12. Click **Publish** in the upper right corner.  
+13. Select **Publish this version** and wait for completion.  
+14. Install the **Power Apps mobile app** on your phone.  
+15. Log in with the same Power Apps user account that has permission on the app.  
+16. Ensure all required users have access and permissions in the Power Apps environment.  
+
+---
+
+## Usage 🚦
+
+### Driver & Student
+1. Log in to the UniRide Attendant App.  
+2. Driver sets the **Bus No.** and **Bus Capacity**.  
+3. Tap the scanner and place the NFC card on the phone’s NFC reader.  
+4. If the Bus No. & schedule match the NFC owner’s ride, a valid message appears:  
+   *“Valid scan – Welcome [Student Name]”* with a confirmation sound.  
+5. If invalid, a popup message appears:  
+   *“Invalid scan – Wrong bus or schedule”* with an alert sound.  
+6. Passenger count increments automatically on valid scans.  
+   - When Bus Capacity equals Passenger Count, a message appears:  
+     *“Bus is Full”* with a long sound to notify the driver.  
+7. Every NFC scan (valid or invalid) is recorded in the **Attendance Table** for admin reference.  
+
+### Admin
+1. **Scan Attendance**: Mirrors the NFC scanner screen available to drivers.  
+2. **Attendance Record**: View daily NFC scans with a date picker for filtering.  
+3. **Navigation**: Each page includes a Home icon (main menu) and arrows (next screen).  
+4. **Student Form**: Add new students or edit existing records. Stores student schedules and bus assignments for validation.  
+5. **Course Form**: Add or edit course entries.  
+6. **Bus Form**: Record new bus acquisitions or edit existing records.  
+7. **UniRide Reports**: Access 4 interactive reports connected to Power BI Service.  
+   - Reports refresh automatically at **10:00 AM** and **7:00 PM** daily.  
+
+---
+
+## Power BI Reports 📊
+- Attendance Report  
+- Bus Utilization Report  
+- School Ride Validity Report  
+- Revenue Report  
+
+---
+
+## License 📄
+This project is licensed under the Great Manchester University's Power Platform.
